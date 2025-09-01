@@ -29,8 +29,7 @@
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 0.035em;
-  background-color: var(--background-muted);
-  color: var(--text-on-light);
+  background-color: var(--background-main);
 }
 
 .hero-text {

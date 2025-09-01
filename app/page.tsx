@@ -1,3 +1,4 @@
+import Header from "./components/header/header";
 import Hero from "./components/hero/hero";
 import Subjects from "./components/subjects/Subjects";
 import WhyPredivine from "./components/whypredivine/whypredivine";
@@ -12,6 +13,7 @@ import Footer from "./components/footer/footer";
 export default function Home() {
   return (
     <div className="home">
+      <Header />
       <Hero />
       <Subjects />
       <WhyPredivine />
