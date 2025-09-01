@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
       <div className="hero">
-        Hero
+        The Top CS Tutor in Toronto
       </div>
   );
 }

@@ -1,7 +1,7 @@
 export default function WhyPredivine() {
   return (
       <div className="why-predivine">
-        WhyPredivine
+        Why Predivine CS Tutors?
       </div>
   );
 }

@@ -1,7 +1,7 @@
 export default function Subjects() {
   return (
       <div className="subjects">
-        Subjects
+        Book a Free Call
       </div>
   );
 }
