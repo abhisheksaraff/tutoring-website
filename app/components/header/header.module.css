@@ -1,0 +1,13 @@
+.contactUsBtn {
+  background-color: var(--background-accent);
+  color: var(--text-on-dark);
+  transition: background-color 0.2s ease;
+}
+
+.contactUsBtn:hover {
+  background-color: var(--background-dark);
+}
+
+.contactUsBtn:active {
+  background-color: var(--background-dark);
+}
