@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <div className="header">
       {/* Logo */}
-      <div className="navbar py-3 bg-base-100 shadow-xl fixed top-0 z-50">
+      <div className="navbar py-3 shadow-xl fixed top-0 z-50 bg-white">
         <div className="navbar-start">
           <a>
             <Image
@@ -70,7 +70,7 @@ export default function Header() {
             </ul>
           </div>
 
-          <a className={`btn px-3 py-7 link-text ${styles.contactUsBtn}`}>Contact Us</a>
+          <a className={`btn px-3 py-7 border-none link-text ${styles.contactUsBtn}`}>Contact Us</a>
         </div>
       </div>
     </div>
