@@ -26,11 +26,11 @@
 
   --font-weight-hero: 500;
   --font-weight-heading: 300;
-  --font-weight-subheading: 300;
+  --font-weight-subheading: 400;
   --font-weight-button: 400;
   --font-weight-link: 400;
   --font-weight-text: 200;
-  --font-weight-subtext: 300;
+  --font-weight-subtext: 100;
 }
 
 body {
@@ -74,6 +74,18 @@ body {
   font-weight: var(--font-weight-subtext);
 }
 
+.background-main {
+  color: var(--background-main);
+}
+
+.background-accent {
+  background-color: var(--background-accent);
+}
+
+.background-dark {
+  background-color: var(--background-dark);
+}
+
 .btn.accent {
   border: 3px solid var(--background-accent);
   border-radius: 2px;
@@ -92,3 +104,19 @@ body {
   background-color: var(--background-dark);
   transform: translateY(0);
 }
+
+.margin {
+  margin-left: 1rem; /* mobile default */
+  margin-right: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .margin {
+    margin-left: clamp(2vw, 5vw, 10vw);
+    margin-right: clamp(2vw, 5vw, 10vw);
+  }
+}
+
+/* * {
+  border: 1px solid red;
+} */
