@@ -6,8 +6,7 @@ export default function Hero() {
       <div
         className={`hero hero-text ${styles.hero}`}
         style={{
-          backgroundImage:
-            "url(https://cdn.pixabay.com/photo/2022/08/30/20/47/institute-7421918_1280.jpg)",
+          backgroundImage: "url(/hero.jpg)",
         }}
       >
         <div className="hero-overlay"></div>
