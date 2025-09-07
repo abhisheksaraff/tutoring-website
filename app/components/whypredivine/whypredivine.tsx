@@ -1,7 +1,7 @@
 export default function WhyPredivine() {
   return (
     <div className="why-predivine">
-      <section className="mt-0 mx-auto max-w-7xl px-4 py-8">
+      <section className="mt-0 mx-auto max-w-7xl px-4 pb-20 py-8">
         <h2 className="text-center heading-text tracking-tight mb-8">
           Why Predivine CS Tutoring?
         </h2>
