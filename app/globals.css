@@ -7,7 +7,7 @@
 
 :root {
   --background-main: #ffffff;
-  --background-muted: #f2f2f2;
+  --background-muted: #f2f2f2; 
   --background-accent: #bf9255;
   --background-dark: #202641;
 
@@ -93,6 +93,10 @@ body {
 
 .background-accent {
   background-color: var(--background-accent);
+}
+
+.background-muted {
+  background-color: var(--background-muted);
 }
 
 .background-dark {
