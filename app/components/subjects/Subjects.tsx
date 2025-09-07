@@ -1,12 +1,11 @@
 export default function Subjects() {
   return (
-    <div className="subjects margin">
-      <div className="px-6 bg-base-100">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-0 shadow-[-8px_8px_20px_rgba(0,0,0,0.15)] -mt-[7vh] relative z-10 overflow-hidden">
+    <div className="subjects">
+      <div className="mx-auto max-w-7xl px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-0 shadow-[-8px_8px_20px_rgba(0,0,0,0.15)] -mt-[13vh] relative z-10 overflow-hidden">
           {/* Card 1 */}
           <div
-            className="p-6 py-9 text-center"
-            style={{ backgroundColor: "var(--background-main)" }}
+            className="p-6 py-9 text-center background-main"
           >
             <h3 className="subheading-text mb-3 min-h-[3rem]">
               Programming Confidence
