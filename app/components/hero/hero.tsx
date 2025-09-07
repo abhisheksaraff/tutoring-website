@@ -1,12 +1,13 @@
+import styles from "./hero.module.css";
+
 export default function Hero() {
   return (
-    <div className="hero">
+    <div className="hero hero-text">
       <div
-        className="hero hero-text mt-20"
+        className={`hero hero-text ${styles.hero}`}
         style={{
           backgroundImage:
             "url(https://cdn.pixabay.com/photo/2022/08/30/20/47/institute-7421918_1280.jpg)",
-          height: "92vh",
         }}
       >
         <div className="hero-overlay"></div>
