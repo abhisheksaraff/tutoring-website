@@ -13,22 +13,25 @@ export default function CSChallenges() {
           className="underline"
           style={{ margin: "-1.3rem auto 3rem" }}
         ></div>
-        <p className="mb-4 text">
-          Coding and computer science can feel overwhelming for many students,
-          with up to 30% experiencing anxiety around programming concepts.
-        </p>
-        <p className="mb-4 text">
-          Unlike other subjects, CS builds on previous skills—missing
-          fundamentals in logic, syntax, or algorithms can make new topics seem
-          impossible. Each challenging assignment or test can feel intimidating,
-          leading students to think they’re “just not good at coding.”
-        </p>
-        <p className="mb-16 text">
-          The real challenge is not ability—it’s gaps in knowledge, fear, and
-          negative self-perception. At Predivine, our tutors help students fill
-          these gaps, rebuild confidence, and develop a strong foundation in CS,
-          turning anxiety into mastery.
-        </p>
+        <div className="px-4">
+          <p className="mb-4 text">
+            Coding and computer science can feel overwhelming for many students,
+            with up to 30% experiencing anxiety around programming concepts.
+          </p>
+          <p className="mb-4 text">
+            Unlike other subjects, CS builds on previous skills—missing
+            fundamentals in logic, syntax, or algorithms can make new topics
+            seem impossible. Each challenging assignment or test can feel
+            intimidating, leading students to think they’re “just not good at
+            coding.”
+          </p>
+          <p className="mb-16 text">
+            The real challenge is not ability—it’s gaps in knowledge, fear, and
+            negative self-perception. At Predivine, our tutors help students
+            fill these gaps, rebuild confidence, and develop a strong foundation
+            in CS, turning anxiety into mastery.
+          </p>
+        </div>
       </div>
       {/* Grey triangle behind */}
       <div
@@ -51,9 +54,10 @@ export default function CSChallenges() {
       {/* White triangle in front */}
       <div
         className="absolute bottom-0 left-0 w-full overflow-hidden"
-        style={{ 
+        style={{
           bottom: "-1px",
-          height: "clamp(30px, 8vw, 70px)" }}
+          height: "clamp(30px, 8vw, 70px)",
+        }}
       >
         <svg
           className="w-full h-full block"
