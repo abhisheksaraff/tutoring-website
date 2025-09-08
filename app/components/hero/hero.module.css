@@ -9,7 +9,7 @@
 
   /* Large screens (desktop) */
   @media (min-width: 1024px) {
-    height: 92vh;
+    height: 84vh;
   }
 
   @media (orientation: portrait) {
