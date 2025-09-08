@@ -24,7 +24,7 @@
   --font-size-button: clamp(0.825rem, calc(1.65vw + 0.20625rem), 0.9375rem);
   --font-size-link: clamp(0.81rem, 1.35vw + 0.225rem, 1.0125rem);
   --font-size-text: clamp(0.9rem, 1.5vw + 0.25rem, 1.125rem);
-  --font-size-subtext: clamp(0.84375rem, 1.265625vw + 0.2109375rem, 0.84375rem);
+  --font-size-subtext: clamp(0.976rem, 1.46vw + 0.242rem, 0.976rem);
 
   --font-weight-hero: 500;
   --font-weight-heading: 400;
