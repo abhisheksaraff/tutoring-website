@@ -6,7 +6,7 @@ import Levels from "./components/levels/levels";
 import Services from "./components/services/services";
 import CSChallenges from "./components/csChallenges/csChallenges";
 import Testimonials from "./components/testimonials/Testimonials";
-import Faqs from "./components/faqs/faqs";
+import Faq from "./components/faq/faq";
 import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
 
@@ -20,8 +20,8 @@ export default function Home() {
       <Levels />
       <Services />
       <CSChallenges />
-      <Testimonials />
-      <Faqs />
+      {/* <Testimonials /> */}
+      <Faq />
       <Contact />
       <Footer />
     </div>
