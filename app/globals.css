@@ -7,7 +7,7 @@
 
 :root {
   --background-main: #ffffff;
-  --background-muted: #f2f2f2; 
+  --background-muted: #f2f2f2;
   --background-accent: #bf9255;
   --background-dark: #202641;
 
@@ -21,7 +21,7 @@
   --font-size-heading: clamp(1.8rem, 3.6vw + 0.6rem, 3rem);
   --font-size-subheading: clamp(1.5rem, 2.5vw + 0.3rem, 1.75rem);
   --font-size-subsubheading: clamp(1.44rem, 3.15vw + 0.525rem, 1.485rem);
-  --font-size-button: clamp(0.75rem, 1.5vw + 0.1875rem, 0.9375rem);
+  --font-size-button: clamp(0.825rem, calc(1.65vw + 0.20625rem), 0.9375rem);
   --font-size-link: clamp(0.81rem, 1.35vw + 0.225rem, 1.0125rem);
   --font-size-text: clamp(0.9rem, 1.5vw + 0.25rem, 1.125rem);
   --font-size-subtext: clamp(0.84375rem, 1.265625vw + 0.2109375rem, 0.84375rem);
@@ -211,12 +211,20 @@ body {
 .underline::after {
   content: "";
   position: absolute;
-  left: 100%;        /* start just after the line */
-  margin-left: 3px;  /* small gap between line and square */
+  left: 100%; /* start just after the line */
+  margin-left: 3px; /* small gap between line and square */
   top: 0;
-  width: 3px;        /* same as line height */
-  height: 3px;       /* same as line height */
+  width: 3px; /* same as line height */
+  height: 3px; /* same as line height */
   background-color: var(--background-accent);
+}
+
+details > summary::-webkit-details-marker {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+details > summary::marker {
+  content: none; /* Firefox */
 }
 
 /* * {
