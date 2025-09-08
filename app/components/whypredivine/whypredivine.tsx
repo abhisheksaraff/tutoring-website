@@ -1,10 +1,11 @@
 export default function WhyPredivine() {
   return (
     <div className="why-predivine">
-      <section className="mt-0 mx-auto max-w-7xl px-4 pb-20 py-8">
+      <section className="mt-0 mx-auto max-w-7xl px-4 py-8">
         <h2 className="text-center heading-text tracking-tight mb-8">
           Why Predivine CS Tutoring?
         </h2>
+        <div className="underline" style={{ margin: "-2rem auto 2rem" }}></div>
         <p
           className="text-black mb-10 text-center mx-0 sm:mx-8 md:mx-12 lg:mx-16"
           style={{

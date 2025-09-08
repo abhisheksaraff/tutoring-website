@@ -6,7 +6,7 @@ export default function Levels() {
       <section className="max-w-7xl mx-auto px-4 pt-10 lg:pt-[6rem] pb-[3.75rem] lg:pb-[6rem] flex flex-col lg:flex-row items-start gap-8">
         {" "}
         {/* Image on Left (hidden on mobile) */}
-        <div className="hidden lg:block lg:w-1/3 relative h-138">
+        <div className="hidden lg:block lg:w-2/5 relative h-138">
           <Image
             src="/levels.jpg"
             alt="CS tutoring"
@@ -15,7 +15,7 @@ export default function Levels() {
           />
         </div>
         {/* Text on Right */}
-        <div className="w-full lg:w-2/3">
+        <div className="w-full lg:w-3/5">
           <h2 className="subheading-text mb-6">
             Find the Right Support for the Student.
           </h2>

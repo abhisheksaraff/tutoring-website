@@ -201,6 +201,24 @@ body {
   height: 100%;
 }
 
+.underline {
+  position: relative;
+  width: 3rem;
+  height: 3px;
+  background-color: var(--background-accent);
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 100%;        /* start just after the line */
+  margin-left: 3px;  /* small gap between line and square */
+  top: 0;
+  width: 3px;        /* same as line height */
+  height: 3px;       /* same as line height */
+  background-color: var(--background-accent);
+}
+
 /* * {
   border: 1px solid red;
 } */
