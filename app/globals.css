@@ -87,6 +87,10 @@ body {
   color: var(--text-light);
 }
 
+.text-color-accent {
+  color: var(--text-accent);
+}
+
 .background-main {
   background-color: var(--background-main);
 }
@@ -115,6 +119,25 @@ body {
   background-color: var(--background-dark);
   transform: translateY(-5px);
   color: var(--text-accent);
+}
+
+.btn.accent:active {
+  background-color: var(--background-dark);
+  transform: translateY(0);
+}
+
+.btn.accent {
+  border: 3px solid var(--background-accent);
+  border-radius: 2px;
+  color: var(--text-accent);
+  background-color: var(--background-dark);
+  transition: background-color 0.2s ease, transform 0.3s ease;
+}
+
+.btn.accent:hover {
+  background-color: var(--background-accent);
+  color: var(--text-on-dark);
+  transform: translateY(-5px);
 }
 
 .btn.accent:active {
