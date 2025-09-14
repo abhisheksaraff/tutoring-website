@@ -13,7 +13,7 @@ export default function Contact() {
   ];
 
   return (
-    <div className="contact flex flex-col lg:flex-row w-full pb-1">
+    <div className="contact flex flex-col lg:flex-row w-full pb-15">
       {/* Left Side */}
       <div className="w-full lg:w-2/5 background-dark text-white px-6 py-8 lg:px-17 lg:py-20">
         <h2 className="heading-text mb-6 text-left">
@@ -159,7 +159,7 @@ export default function Contact() {
           {/* Submit */}
           <button
             type="submit"
-            className="background-dark text-white p-3 w-full md:w-1/6"
+            className="p-3 w-full md:w-1/6 border-none shadow-2xl bg-[var(--background-dark)] text-[var(--text-on-dark)] transition-colors duration-200 hover:bg-[var(--background-accent)] active:bg-[var(--background-accent)]"
           >
             Submit
           </button>
