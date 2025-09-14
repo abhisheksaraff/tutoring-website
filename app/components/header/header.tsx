@@ -1,4 +1,3 @@
-import styles from "./header.module.css";
 import Image from "next/image";
 import LogoText from "../../../public/predivine-logo-text-transparent.png";
 
