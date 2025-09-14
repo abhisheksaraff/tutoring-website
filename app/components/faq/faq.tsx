@@ -45,7 +45,7 @@ const faqs: FaqItem[] = [
 
 export default function Faq() {
   return (
-    <div className="faq max-w-7xl mx-auto px-4 pt-8 pb-12">
+    <div id="faq" className="faq max-w-7xl mx-auto px-4 pt-12 pb-12 scroll-mt-20">
       <h2 className="heading-text text-center mb-12">
         Frequently Asked Questions
       </h2>

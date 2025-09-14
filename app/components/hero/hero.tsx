@@ -2,7 +2,7 @@ import styles from "./hero.module.css";
 
 export default function Hero() {
   return (
-    <div className="hero py-10">
+    <div id="hero" className="hero py-10">
       <div
         className={`hero hero-text ${styles.hero}`}
         style={{

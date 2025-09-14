@@ -34,7 +34,10 @@ export default function Contact() {
       </div>
 
       {/* Right Side */}
-      <div className="w-full lg:w-3/5 background-muted px-6 py-8 lg:px-17 lg:py-20 button-text">
+      <div
+        id="contact"
+        className="w-full lg:w-3/5 background-muted px-6 py-8 lg:px-17 lg:py-20 button-text scroll-mt-20"
+      >
         <h3 className="heading-text mb-6 text-center">Book A Consultation</h3>
         <div
           className="underline"

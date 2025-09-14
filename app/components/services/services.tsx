@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Services() {
   return (
-    <div className="services">
+    <div id="services" className="services scroll-mt-20">
       <section className="max-w-7xl mx-auto px-4 py-16">
         <h2 className="heading-text text-center mb-12">Our Services</h2>
         <div className="underline" style={{ margin: "-3rem auto 5rem" }}></div>
