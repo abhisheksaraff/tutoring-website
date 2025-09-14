@@ -2,46 +2,57 @@ import styles from "./header.module.css";
 import Image from "next/image";
 import LogoText from "../../../public/predivine-logo-text-transparent.png";
 
-export default function Header() {
+export default function Navbar() {
   return (
-    <div className="header">
-      {/* Logo */}
-      <div className="navbar py-3 shadow-xl fixed top-0 z-50 bg-white">
-        <div className="navbar-start">
-          <a>
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-xl py-2">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-2 flex items-center justify-between">
+        {/* Logo */}
+        <div className="flex-shrink-0">
+          <a href="#hero">
             <Image
               src={LogoText}
               alt="Predivine Logo"
-              width={250} // pick a size
-              height={60}
-              className="min-w-[100px] max-w-[200px] h-auto w-auto"
+              width={180}
+              height={50}
+              className="h-auto w-auto"
               priority
             />
           </a>
         </div>
 
-        <div className="navbar-end">
-          {/* Menu */}
-          <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1 pr-5 link-text">
-              <li>
-                <a>About</a>
-              </li>
-              <li>
-                <a>Services</a>
-              </li>
-              <li>
-                <a>FAQ</a>
-              </li>
-            </ul>
-          </div>
+        {/* Desktop Menu */}
+        <div className="hidden lg:flex items-center gap-6 link-text">
+          <a href="#about" className="hover:text-gray-400 transition">
+            About
+          </a>
+          <a href="#services" className="hover:text-gray-400 transition">
+            Services
+          </a>
+          <a href="#faq" className="hover:text-gray-400 transition">
+            FAQ
+          </a>
+          <a
+            href="#contact"
+            className="px-3 py-3.5 border-none shadow-2xl bg-[var(--background-accent)] text-[var(--text-on-dark)] transition-colors duration-200 hover:bg-[var(--background-dark)] active:bg-[var(--background-dark)]"
+          >
+            Contact Us
+          </a>
+        </div>
 
-          {/* Dropdown Menu */}
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+        {/* Mobile Drawer */}
+        <div className="lg:hidden drawer drawer-end">
+          <input id="mobile-drawer" type="checkbox" className="drawer-toggle" />
+
+          {/* Hamburger button */}
+          <div className="drawer-content flex justify-end p-1">
+            <label
+              htmlFor="mobile-drawer"
+              className="btn btn-ghost p-2 text-2xl"
+              aria-label="Open Menu"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-7 w-7 md:h-8 md:w-8"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -50,29 +61,46 @@ export default function Header() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d="M4 6h16 M4 12h16 M4 18h16"
+                  d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
-            </div>
-            <ul
-              tabIndex={0}
-              className="menu dropdown-content absolute inset-0 z-50 w-full h-screen bg-base-100 flex flex-col items-center justify-center p-8"
-            >
+            </label>
+          </div>
+
+          {/* Drawer sidebar */}
+          <div className="drawer-side">
+            <label htmlFor="mobile-drawer" className="drawer-overlay"></label>
+            <ul className="menu min-h-full w-2/3 background-dark sub-text text-white flex flex-col items-center justify-center gap-5 p-6">
               <li>
-                <a>About</a>
+                <a href="#about" className="transition w-full text-center py-1">
+                  About
+                </a>
               </li>
               <li>
-                <a>Services</a>
+                <a
+                  href="#services"
+                  className="transition w-full text-center py-1"
+                >
+                  Services
+                </a>
               </li>
               <li>
-                <a>FAQ</a>
+                <a href="#faq" className="transition w-full text-center py-1">
+                  FAQ
+                </a>
+              </li>
+              <li className="w-full">
+                <a
+                  href="#contact"
+                  className="block w-full text-center py-3 bg-[var(--background-accent)] text-white transition duration-250 active:scale-95 active:brightness-150"
+                >
+                  Contact Us
+                </a>
               </li>
             </ul>
           </div>
-
-          <a className={`btn px-3 py-7 border-none link-text ${styles.contactUsBtn}`}>Contact Us</a>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
