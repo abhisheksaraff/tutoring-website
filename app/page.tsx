@@ -9,6 +9,7 @@ import Testimonials from "./components/testimonials/Testimonials";
 import Faq from "./components/faq/faq";
 import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
+import ContactBanner from "./components/contactBanner/contactBanner";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <Faq />
       <Contact />
       <Footer />
+      <ContactBanner />
     </div>
   );
 }
