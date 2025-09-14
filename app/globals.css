@@ -1,9 +1,9 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-/* * {
-  border: 1px solid red;
-} */
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --background-main: #ffffff;
