@@ -1,15 +1,15 @@
 export default function Contact() {
-  const benefits = [
-    "Build confidence to tackle any academic challenge.",
-    "Foster a lifelong love for learning.",
-    "Overcome fears with compassionate, one-on-one support.",
-    "Achieve success through personalized math, science, or test prep lessons.",
-    "Master strategies for homework, tests, and time management.",
-    "Close learning gaps with fun, engaging, expert tutors.",
-    "Connect with trusted local tutors who care.",
-    "Schedule lesson times and locations that work with your schedule.",
-    "Have access to additional help when you need it.",
-    "Take lessons either in person or online.",
+  const benefits: string[] = [
+    "Build confidence to tackle any coding or computer science challenge.",
+    "Foster a lifelong curiosity and love for programming.",
+    "Overcome learning obstacles with compassionate, one-on-one support.",
+    "Achieve success through personalized CS and coding lessons.",
+    "Master strategies for projects, exams, and problem-solving.",
+    "Close learning gaps with engaging, expert tutoring.",
+    "Connect with a dedicated tutor who cares about your growth.",
+    "Schedule lessons at times that fit your busy schedule.",
+    "Access additional support when you need it.",
+    "Take lessons either online or in person.",
   ];
 
   return (
