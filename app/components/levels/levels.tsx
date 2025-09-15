@@ -1,12 +1,46 @@
 import Image from "next/image";
 
+interface TutoringLevel {
+  level: string;
+  highlights: string[];
+}
+
+const tutoringLevels: TutoringLevel[] = [
+  {
+    level: "Middle School",
+    highlights: [
+      "Learn basic programming: Python, Scratch, and block-based coding.",
+      "Develop logical thinking, computational thinking, and problem-solving skills.",
+      "Explore robotics, simple game development, and coding competitions.",
+      "Build confidence through school projects and interactive coding exercises.",
+    ],
+  },
+  {
+    level: "High School",
+    highlights: [
+      "Advance in Python, Java, C, Web Development, and more.",
+      "Study data structures, and algorithms.",
+      "Prepare for AP Computer Science, coding competitions, and hackathons.",
+      "Develop self-reliance, study strategies, and collaborative coding skills.",
+    ],
+  },
+  {
+    level: "College & University",
+    highlights: [
+      "Master advanced algorithms, data structures, and software engineering.",
+      "Explore web apps, full-stack development, and machine learning fundamentals.",
+      "Prepare for coding interviews, and university-level projects.",
+      "Receive mentorship for internships, career readiness, and portfolio building.",
+    ],
+  },
+];
+
 export default function Levels() {
   return (
     <div className="levels background-muted">
       <section className="max-w-7xl mx-auto px-4 pt-10 lg:pt-[6rem] pb-[3.75rem] lg:pb-[6rem] flex flex-col lg:flex-row items-start gap-8">
-        {" "}
         {/* Image on Left (hidden on mobile) */}
-        <div className="hidden lg:block lg:w-2/5 relative h-138">
+        <div className="hidden lg:block lg:w-2/5 relative h-163">
           <Image
             src="/levels.jpg"
             alt="CS tutoring"
@@ -14,6 +48,7 @@ export default function Levels() {
             className="object-cover shadow-lg"
           />
         </div>
+
         {/* Text on Right */}
         <div className="w-full lg:w-3/5">
           <h2 className="subheading-text mb-6">
@@ -27,51 +62,17 @@ export default function Levels() {
             into opportunities for growth.
           </p>
 
-          {/* Middle School */}
-          <div className="mb-6">
-            <h3 className="subsubheading-text mb-2">Middle School</h3>
-            <ul className="list-disc ml-9 text-color-light">
-              <li>
-                Learn basic programming: Python, Scratch, and logical thinking.
-              </li>
-              <li>
-                Develop problem-solving and computational thinking skills.
-              </li>
-              <li>Prepare for coding competitions and school projects.</li>
-            </ul>
-          </div>
-
-          {/* High School */}
-          <div className="mb-6">
-            <h3 className="subsubheading-text mb-2">High School</h3>
-            <ul className="list-disc ml-9 text-color-light">
-              <li>
-                Advance in Java, Python, Web Development, and Data Structures.
-              </li>
-              <li>Prepare for AP Computer Science and coding competitions.</li>
-              <li>
-                Develop self-reliance and study skills for college readiness.
-              </li>
-            </ul>
-          </div>
-
-          {/* College & University */}
-          <div>
-            <h3 className="subsubheading-text mb-2">College & University</h3>
-            <ul className="list-disc ml-9 text-color-light">
-              <li>
-                Master advanced algorithms, data structures, and systems
-                programming.
-              </li>
-              <li>
-                Prepare for coding interviews and university-level projects.
-              </li>
-              <li>
-                Receive mentorship for research, internships, and career
-                readiness in CS.
-              </li>
-            </ul>
-          </div>
+          {/* Dynamic Levels */}
+          {tutoringLevels.map((level) => (
+            <div key={level.level} className="mb-6">
+              <h3 className="subsubheading-text mb-2">{level.level}</h3>
+              <ul className="list-disc ml-9 text-color-light">
+                {level.highlights.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </section>
     </div>
