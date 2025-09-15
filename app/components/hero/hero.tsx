@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="hero-overlay"></div>
         <div className="hero-content text-neutral-content text-center">
           <div className="max-w-4xl">
-            <p className="mb-5">The Best CS Tutors in Toronto.</p>
+            <p className="mb-5">Building Tomorrow’s Canadian Tech Leaders</p>
             <a href="#contact" className="btn button-text accent px-12 py-6">
               Book a Free Call
               <svg
