@@ -9,7 +9,7 @@ const faqs: FaqItem[] = [
   {
     question: "What Subjects or Tests Do You Cover?",
     answer:
-      "We cover computer science, coding fundamentals, algorithm practice, SAT/ACT prep, college CS courses, and more.",
+      "We cover computer science, programming languages (Python, Java, C among others), web development, algorithms, data structures, coding competitions, and college CS courses.",
   },
   {
     question: "How Do You Assess a Student’s Needs Before Starting Sessions?",
@@ -17,14 +17,9 @@ const faqs: FaqItem[] = [
       "We start with a consultation, review recent work or test scores, and create a personalized tutoring plan tailored to each student.",
   },
   {
-    question: "How Are Students Matched With Tutors?",
+    question: "Can You Help With Special Needs or Learning Differences?",
     answer:
-      "Our team pairs students with tutors based on skill set, learning style, and goals to ensure the best academic support.",
-  },
-  {
-    question: "Can Tutors Help With Special Needs or Learning Differences?",
-    answer:
-      "Yes, our tutors are experienced in accommodating a variety of learning needs, including ADHD, dyslexia, and other learning differences.",
+      "Yes, we are experienced in accommodating a variety of learning needs, including ADHD, dyslexia, and other learning differences.",
   },
   {
     question: "Why Should I Choose Private Tutoring Over A Learning Center?",
@@ -37,15 +32,23 @@ const faqs: FaqItem[] = [
       "Frequency depends on the student’s goals and needs, ranging from weekly sessions to intensive prep before exams.",
   },
   {
+    question: "Do You Provide Homework Help or Only Lessons?",
+    answer:
+      "We help with both learning new concepts and completing assignments or projects as needed.",
+  },
+  {
     question: "Do You Offer Virtual Tutoring Sessions?",
     answer:
-      "Yes, all tutoring sessions can be conducted virtually with the same quality and engagement.",
+      "Yes, all tutoring sessions are conducted virtually with the same quality and engagement.",
   },
 ];
 
 export default function Faq() {
   return (
-    <div id="faq" className="faq max-w-7xl mx-auto px-4 pt-12 pb-12 scroll-mt-20">
+    <div
+      id="faq"
+      className="faq max-w-7xl mx-auto px-4 pt-12 pb-12 scroll-mt-20"
+    >
       <h2 className="heading-text text-center mb-12">
         Frequently Asked Questions
       </h2>
