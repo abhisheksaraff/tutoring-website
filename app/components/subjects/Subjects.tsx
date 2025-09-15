@@ -17,8 +17,7 @@ export default function Subjects() {
                 paddingRight: "clamp(0.5rem, 1.5vw, 1.25rem)",
               }}
             >
-              Our tutors teach Python to advanced algorithms, helping students
-              learn coding and build projects.
+              Tutors guide students in Python, Java, C, algorithms, and more - from basics to advanced projects.
             </p>
           </div>
 
