@@ -9,7 +9,6 @@ export default function Contact() {
     "Connect with a dedicated tutor who cares about your growth.",
     "Schedule lessons at times that fit your busy schedule.",
     "Access additional support when you need it.",
-    "Take lessons either online or in person.",
   ];
 
   return (
@@ -19,7 +18,7 @@ export default function Contact() {
         <h2 className="heading-text mb-6 text-left">
           Ready To Help Your Student Grow?
         </h2>
-        <p className="mb-6 text-left text-xl">
+        <p className="mb-6 text-left text-lg">
           At Predivine, we empower students to thrive in math, science, and test
           prep. With us, your student can:
         </p>
