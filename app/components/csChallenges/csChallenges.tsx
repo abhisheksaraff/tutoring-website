@@ -16,17 +16,17 @@ export default function CSChallenges() {
         <div className="px-4">
           <p className="mb-4 text">
             Coding and computer science can feel overwhelming for many students,
-            with up to 30% experiencing anxiety around programming concepts.
+            with up to 52% experiencing anxiety around programming concepts.
           </p>
           <p className="mb-4 text">
-            Unlike other subjects, CS builds on previous skills—missing
+            Unlike other subjects, CS builds on previous skills: missing
             fundamentals in logic, syntax, or algorithms can make new topics
             seem impossible. Each challenging assignment or test can feel
             intimidating, leading students to think they’re “just not good at
             coding.”
           </p>
           <p className="mb-16 text">
-            The real challenge is not ability—it’s gaps in knowledge, fear, and
+            The real challenge is not ability. It’s gaps in knowledge, fear, and
             negative self-perception. At Predivine, our tutors help students
             fill these gaps, rebuild confidence, and develop a strong foundation
             in CS, turning anxiety into mastery.
@@ -38,7 +38,7 @@ export default function CSChallenges() {
         className="absolute left-0 w-full overflow-hidden"
         style={{
           bottom: "0px",
-          height: "clamp(50px, 12vw, 90px)",
+          height: "clamp(35px, 8.8vw, 66px)",
         }}
       >
         <svg
@@ -47,7 +47,8 @@ export default function CSChallenges() {
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
         >
-          <polygon points="0,20 0,100 100,100" fill="#9a9999" />
+          <polygon points="0,23 0,100 100,100" fill="#9a9999" />{" "}
+          {/* adjusted top */}
         </svg>
       </div>
 
@@ -56,7 +57,7 @@ export default function CSChallenges() {
         className="absolute bottom-0 left-0 w-full overflow-hidden"
         style={{
           bottom: "-1px",
-          height: "clamp(30px, 8vw, 70px)",
+          height: "clamp(20px, 5vw, 50px)",
         }}
       >
         <svg
@@ -65,7 +66,7 @@ export default function CSChallenges() {
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
         >
-          <polygon points="0,15 0,100 100,100" fill="white" />
+          <polygon points="0,20 0,100 100,100" fill="white" />{" "}
         </svg>
       </div>
     </div>
