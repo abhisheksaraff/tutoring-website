@@ -44,7 +44,7 @@ export default function Contact() {
         ></div>
         <form className="space-y-6">
           {/* Parent Name */}
-          <div className="flex flex-col md:flex-row gap-4">
+          {/* <div className="flex flex-col md:flex-row gap-4">
             <input
               type="text"
               placeholder="Parent First Name"
@@ -57,10 +57,10 @@ export default function Contact() {
               className="w-full md:w-1/2 p-2 border-2 border-gray-200 bg-white"
               required
             />
-          </div>
+          </div> */}
 
           {/* Student Name */}
-          <div className="flex flex-col md:flex-row gap-4">
+          {/* <div className="flex flex-col md:flex-row gap-4">
             <input
               type="text"
               placeholder="Student First Name"
@@ -73,13 +73,29 @@ export default function Contact() {
               className="w-full md:w-1/2 p-2 border-2 border-gray-200 bg-white"
               required
             />
+          </div> */}
+
+          {/* Student Name */}
+          <div className="flex flex-col md:flex-row gap-4">
+            <input
+              type="text"
+              placeholder="First Name"
+              className="w-full md:w-1/2 p-2 border-2 border-gray-200 bg-white"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              className="w-full md:w-1/2 p-2 border-2 border-gray-200 bg-white"
+              required
+            />
           </div>
 
           {/* Email + Phone */}
           <div className="flex flex-col md:flex-row gap-4">
             <input
               type="email"
-              placeholder="Parent Email"
+              placeholder="Email"
               className="w-full p-2 border-2 border-gray-200 bg-white"
               required
             />
