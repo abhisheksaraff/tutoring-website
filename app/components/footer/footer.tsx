@@ -14,9 +14,9 @@ export default function Footer() {
             className="h-14 w-auto mx-auto md:mx-0"
           />
           <p className="mt-3 italic text-gray-200">
-            At Predivine, we turn{" "}
+            At Predivine, we transform{" "}
             <span className="font-medium">“I’m stuck…”</span> into{" "}
-            <span className="font-medium">“I can solve this!”</span>
+            <span className="font-medium">“I’ve got this!”</span>
           </p>
         </div>
 
