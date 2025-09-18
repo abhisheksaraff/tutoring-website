@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="background-dark text-white px-6 md:px-12 py-8 pb-[3rem] relative">
+    <footer className="background-dark text-white px-6 md:px-12 py-8 pb-[3rem] relative link-text">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Left: Logo + Motto */}
         <div className="text-center md:text-left">
@@ -28,7 +28,7 @@ export default function Footer() {
               647.547.4808
             </a>
           </p>
-          <p>
+          <p className="whitespace-nowrap">
             <span className="text-color-accent">e:</span>{" "}
             <a
               href="mailto:predivinetutoring@gmail.com"
