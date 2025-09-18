@@ -86,38 +86,6 @@ export default function Contact() {
           style={{ margin: "-1.3rem auto 2.5rem" }}
         ></div>
         <form className="space-y-6">
-          {/* Parent Name */}
-          {/* <div className="flex flex-col md:flex-row gap-4">
-            <input
-              type="text"
-              placeholder="Parent First Name"
-              className="w-full md:w-1/2 p-2 border-2 border-gray-200 bg-white"
-              required
-            />
-            <input
-              type="text"
-              placeholder="Parent Last Name"
-              className="w-full md:w-1/2 p-2 border-2 border-gray-200 bg-white"
-              required
-            />
-          </div> */}
-
-          {/* Student Name */}
-          {/* <div className="flex flex-col md:flex-row gap-4">
-            <input
-              type="text"
-              placeholder="Student First Name"
-              className="w-full md:w-1/2 p-2 border-2 border-gray-200 bg-white"
-              required
-            />
-            <input
-              type="text"
-              placeholder="Student Last Name"
-              className="w-full md:w-1/2 p-2 border-2 border-gray-200 bg-white"
-              required
-            />
-          </div> */}
-
           {/* Student Name */}
           <div className="flex flex-col md:flex-row gap-4">
             <input
