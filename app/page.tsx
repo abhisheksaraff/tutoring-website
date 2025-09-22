@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 import Header from "./components/header/header";
 import Hero from "./components/hero/hero";
 import Subjects from "./components/subjects/Subjects";
