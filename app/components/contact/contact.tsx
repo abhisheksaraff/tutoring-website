@@ -12,7 +12,6 @@ export default function Contact() {
 
   return (
     <section
-      id="contact"
       className="contact flex flex-col lg:flex-row w-full pb-15"
       aria-label="Contact Predivine CS Tutoring"
     >
