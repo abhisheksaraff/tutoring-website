@@ -15,17 +15,18 @@ export default function ContactForm() {
       // Bot detected
       return;
     }
+
     const showSuccessToastMessage = () => {
-      toast.success("Thank you, we will reach back within 24 hours!", {
+      toast.success("Thank you! We will get back to you within 24 hours.", {
         position: "top-right",
         style: {
-          background: "#ffffff", // white toast background
-          color: "#000000", // text color
+          background: "#ffffff",
+          color: "#000000",
         },
         icon: (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="#bf9255" // brand color for icon
+            fill="#bf9255"
             viewBox="0 0 24 24"
             width="20"
             height="20"
@@ -34,6 +35,30 @@ export default function ContactForm() {
           </svg>
         ),
       });
+    };
+
+    const showFailureToastMessage = () => {
+      toast.error(
+        "Oops! There was an error sending your message. Please try again.",
+        {
+          position: "top-right",
+          style: {
+            background: "#ffffff",
+            color: "#000000",
+          },
+          icon: (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#bf9255"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+            >
+              <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm-1 17l-5-5 1.41-1.41L11 14.17l7.59-7.59L20 8l-9 9z" />
+            </svg>
+          ),
+        }
+      );
     };
 
     // Gather user input from the form
@@ -56,20 +81,19 @@ export default function ContactForm() {
       const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
       const userID = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
 
-      // const res = await emailjs.send(
-      //   serviceID,
-      //   templateID,
-      //   emailParams,
-      //   userID
-      // );
+      const res = await emailjs.send(
+        serviceID,
+        templateID,
+        emailParams,
+        userID
+      );
 
-      // if (res.status === 200) {
-      //   alert("Message sent successfully!");
-      //   target.reset();
-      // }
-      showSuccessToastMessage();
+      if (res.status === 200) {
+        showSuccessToastMessage();
+        target.reset();
+      }
     } catch (error) {
-      toast.error("Failed to send message. Please try again later.");
+      showFailureToastMessage();
     }
   };
 
@@ -146,7 +170,6 @@ export default function ContactForm() {
             name="schoolYear"
             className="w-full p-2 border-2 border-gray-200 bg-white h-[2.5rem]"
             defaultValue=""
-            required
           >
             <option value="" disabled hidden>
               Current School Year
@@ -164,19 +187,19 @@ export default function ContactForm() {
         {/* Learning Needs */}
         <textarea
           name="learningNeeds"
-          placeholder="Please share any challenges your student faces as well as their goals or learning preferences..."
+          placeholder="Please share your student’s challenges, goals, or learning preferences..."
           className="w-full p-2 border-2 border-gray-200 bg-white"
           rows={4}
+          title="Provide details about your student’s challenges and goals to help us tailor tutoring."
           required
         ></textarea>
 
         {/* Availability */}
         <textarea
           name="availability"
-          placeholder="Please include your availability/ preferred method of communication for a consultation, or leave blank if you just have a question."
+          placeholder="Share your availability and preferred contact method for a consultation."
           className="w-full p-2 border-2 border-gray-200 bg-white"
           rows={3}
-          required
         ></textarea>
 
         {/* Referral Source */}
@@ -184,7 +207,6 @@ export default function ContactForm() {
           name="referralSource"
           className="w-full p-2 border-2 border-gray-200 bg-white h-[2.5rem]"
           defaultValue=""
-          required
         >
           <option value="" disabled hidden>
             How did you hear about us?
@@ -211,7 +233,7 @@ export default function ContactForm() {
         >
           Submit
         </button>
-        <ToastContainer theme="light"/>
+        <ToastContainer theme="light" />
       </form>
     </div>
   );
