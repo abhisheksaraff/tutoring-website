@@ -1,6 +1,7 @@
 "use client";
 
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
 
 export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -14,6 +15,26 @@ export default function ContactForm() {
       // Bot detected
       return;
     }
+    const showSuccessToastMessage = () => {
+      toast.success("Thank you, we will reach back within 24 hours!", {
+        position: "top-right",
+        style: {
+          background: "#ffffff", // white toast background
+          color: "#000000", // text color
+        },
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#bf9255" // brand color for icon
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+          >
+            <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm-1 17l-5-5 1.41-1.41L11 14.17l7.59-7.59L20 8l-9 9z" />
+          </svg>
+        ),
+      });
+    };
 
     // Gather user input from the form
     const formData = new FormData(target);
@@ -46,9 +67,9 @@ export default function ContactForm() {
       //   alert("Message sent successfully!");
       //   target.reset();
       // }
+      showSuccessToastMessage();
     } catch (error) {
-      alert("Failed to send message. Please try again later.");
-      console.error(error);
+      toast.error("Failed to send message. Please try again later.");
     }
   };
 
@@ -190,6 +211,7 @@ export default function ContactForm() {
         >
           Submit
         </button>
+        <ToastContainer theme="light"/>
       </form>
     </div>
   );

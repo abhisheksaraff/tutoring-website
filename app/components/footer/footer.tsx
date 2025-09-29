@@ -37,6 +37,9 @@ export default function Footer() {
               predivinetutoring@gmail.com
             </a>
           </p>
+          <p className="whitespace-nowrap">
+            <span className="text-color-accent">l:</span> Toronto, Canada
+          </p>
         </div>
       </div>
 

@@ -1,7 +1,7 @@
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 dotenv.config();
 
-import Header from "./components/header/header";
+import Navbar from "./components/navbar/navbar";
 import Hero from "./components/hero/hero";
 import Subjects from "./components/subjects/Subjects";
 // import WhyPredivine from "./components/whypredivine/whypredivine";
@@ -17,20 +17,22 @@ import ContactBanner from "./components/contactBanner/contactBanner";
 
 export default function Home() {
   return (
-    <div className="home">
-      <Header />
-      <Hero />
-      <Subjects />
-      <About />
-      {/* <WhyPredivine /> */}
-      <Levels />
-      <Services />
-      <CSChallenges />
-      {/* <Testimonials /> */}
-      <Faq />
-      <Contact />
+    <>
+      <main>
+        <Navbar />
+        <Hero />
+        <Subjects />
+        <About />
+        {/* <WhyPredivine /> */}
+        <Levels />
+        <Services />
+        <CSChallenges />
+        {/* <Testimonials /> */}
+        <Faq />
+        <Contact />
+      </main>
       <Footer />
       <ContactBanner />
-    </div>
+    </>
   );
 }

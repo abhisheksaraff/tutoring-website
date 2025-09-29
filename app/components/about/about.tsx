@@ -1,6 +1,6 @@
 export default function WhyPredivine() {
   return (
-    <div id="about" className="about scroll-mt-20">
+    <section id="about" className="about scroll-mt-20">
       <section className="mt-0 mx-auto max-w-7xl px-4 py-8 pt-16">
         <h2 className="text-center heading-text tracking-tight mb-8">
           Our Values at Predivine CS Tutoring
@@ -22,7 +22,7 @@ export default function WhyPredivine() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
           {/* Card1 */}
-          <div
+          <article
             className="border h-[95%] mx-auto p-4 py-6 text-center"
             style={{ boxShadow: "0 0 5px rgba(0,0,0,0.2)" }}
           >
@@ -55,10 +55,10 @@ export default function WhyPredivine() {
               We build self-efficacy through clear goals and individualized
               guidance, reinforcing durable confidence and stronger outcomes.
             </p>
-          </div>
+          </article>
 
           {/* Card2 */}
-          <div
+          <article
             className="border h-[95%] mx-auto p-4 py-6 text-center"
             style={{ boxShadow: "0 0 5px rgba(0,0,0,0.2)" }}
           >
@@ -93,10 +93,10 @@ export default function WhyPredivine() {
               Our approach combines empathy with high standards, helping
               learners navigate challenges with patience, clarity, and care.
             </p>
-          </div>
+          </article>
 
           {/* Card3 */}
-          <div
+          <article
             className="border h-[95%] mx-auto p-4 py-6 text-center"
             style={{ boxShadow: "0 0 5px rgba(0,0,0,0.2)" }}
           >
@@ -129,10 +129,10 @@ export default function WhyPredivine() {
               We specialize in tailored learning experiences with emphasis on
               depth, clarity, and measurable progress.
             </p>
-          </div>
+          </article>
 
           {/* Card4 */}
-          <div
+          <article
             className="border h-[95%] mx-auto p-4 py-6 text-center"
             style={{ boxShadow: "0 0 5px rgba(0,0,0,0.2)" }}
           >
@@ -167,9 +167,9 @@ export default function WhyPredivine() {
               Backed by years of practice, we deliver trusted guidance and a
               professional commitment to excellence.
             </p>
-          </div>
+          </article>
         </div>
       </section>
-    </div>
+    </section>
   );
 }
