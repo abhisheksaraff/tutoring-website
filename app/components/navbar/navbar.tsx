@@ -69,7 +69,7 @@ export default function Navbar() {
           {/* Drawer sidebar */}
           <div className="drawer-side">
             <label htmlFor="mobile-drawer" className="drawer-overlay"></label>
-            <ul className="menu min-h-full w-2/3 background-dark sub-text text-white flex flex-col items-center justify-center gap-5 p-6">
+            <ul className="menu min-h-full w-2/4 md:w-1/2 background-dark sub-text text-white flex flex-col items-center justify-center gap-5 p-6">
               <li>
                 <a href="#about" className="transition w-full text-center py-1">
                   About

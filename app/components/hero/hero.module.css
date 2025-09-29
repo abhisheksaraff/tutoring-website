@@ -15,4 +15,14 @@
   @media (orientation: portrait) {
     height: 60vh;
   }
+
+  /* Mobile landscape */
+  @media (max-width: 799px) and (orientation: landscape) {
+    height: 90vh; /* taller for phone landscape */
+  }
+
+  /* Extra-wide screens */
+  @media (min-width: 1600px) {
+    height: 80vh; 
+  }
 }
