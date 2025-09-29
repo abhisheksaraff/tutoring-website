@@ -116,73 +116,64 @@ export default function ContactForm() {
         />
 
         {/* Student Name */}
-        <div className="flex flex-col md:flex-row gap-4">
-          <input
-            type="text"
-            name="firstName"
-            placeholder="First Name"
-            className="w-full md:w-1/2 p-2 border-2 border-gray-200 bg-white"
-            required
-          />
-          <input
-            type="text"
-            name="lastName"
-            placeholder="Last Name"
-            className="w-full md:w-1/2 p-2 border-2 border-gray-200 bg-white"
-            required
-          />
-        </div>
+        <input
+          type="text"
+          name="firstName"
+          placeholder="First Name"
+          className="w-full md:w-1/2 p-2 border-2 border-gray-200 bg-white"
+          required
+          autoComplete="given-name"
+        />
+        <input
+          type="text"
+          name="lastName"
+          placeholder="Last Name"
+          className="w-full md:w-1/2 p-2 border-2 border-gray-200 bg-white"
+          required
+          autoComplete="family-name"
+        />
 
         {/* Email + Phone */}
-        <div className="flex flex-col md:flex-row gap-4">
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-            title="Please enter a valid email"
-            className="w-full p-2 border-2 border-gray-200 bg-white"
-            required
-          />
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Phone (e.g., 1234567890)"
-            className="w-full p-2 border-2 border-gray-200 bg-white"
-            pattern="^\d{10}$"
-            title="Please enter a 10-digit Phone Number, e.g., 9876543210"
-            required
-          />
-        </div>
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="Please enter a valid email"
+          className="w-full p-2 border-2 border-gray-200 bg-white"
+          required
+          autoComplete="email"
+        />
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Phone (e.g., 1234567890)"
+          className="w-full p-2 border-2 border-gray-200 bg-white"
+          pattern="^\d{10}$"
+          title="Please enter a 10-digit Phone Number, e.g., 9876543210"
+          required
+          autoComplete="tel"
+        />
 
-        {/* Postal Code + School Year */}
-        <div className="flex flex-col md:flex-row gap-4">
-          <input
-            type="text"
-            name="postalCode"
-            placeholder="Postal Code (e.g., M5V3L9)"
-            className="w-full p-2 border-2 border-gray-200 bg-white"
-            pattern="^[ABCEGHJKLMNPRSTVXYabceghjklmnprstvxy]{1}\d{1}[A-Za-z]{1} *\d{1}[A-Za-z]{1}\d{1}$"
-            title="Please enter a valid Postal Code, e.g., M5V3L9"
-            required
-          />
-          <select
-            name="schoolYear"
-            className="w-full p-2 border-2 border-gray-200 bg-white h-[2.5rem]"
-            defaultValue=""
-          >
-            <option value="" disabled hidden>
-              Current School Year
-            </option>
-            <option value="Elementary K-5">Elementary K-5</option>
-            <option value="Middle School 6-8">Middle School 6-8</option>
-            <option value="High School 9-12">High School 9-12</option>
-            <option value="College University Student">
-              College / University Student
-            </option>
-            <option value="Adult">Adult</option>
-          </select>
-        </div>
+        {/* Postal Code */}
+        <input
+          type="text"
+          name="postalCode"
+          placeholder="Postal Code (e.g., M5V3L9)"
+          className="w-full p-2 border-2 border-gray-200 bg-white"
+          pattern="^[ABCEGHJKLMNPRSTVXYabceghjklmnprstvxy]{1}\d{1}[A-Za-z]{1} *\d{1}[A-Za-z]{1}\d{1}$"
+          title="Please enter a valid Postal Code, e.g., M5V3L9"
+          required
+          autoComplete="postal-code"
+        />
+
+        {/* School Year */}
+        <select
+          name="schoolYear"
+          className="w-full p-2 border-2 border-gray-200 bg-white h-[2.5rem]"
+          defaultValue=""
+          autoComplete="education-level"
+        />
 
         {/* Learning Needs */}
         <textarea
@@ -192,6 +183,7 @@ export default function ContactForm() {
           rows={4}
           title="Provide details about your student’s challenges and goals to help us tailor tutoring."
           required
+          autoComplete="off"
         ></textarea>
 
         {/* Availability */}
