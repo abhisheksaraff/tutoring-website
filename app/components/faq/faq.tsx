@@ -1,4 +1,5 @@
 import React from "react";
+import Script from "next/script";
 
 interface FaqItem {
   question: string;
@@ -83,6 +84,22 @@ export default function Faq() {
           </details>
         ))}
       </div>
+
+      {/* JSON-LD for SEO */}
+      <Script type="application/ld+json" id="faq-schema">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: faq.answer,
+            },
+          })),
+        })}
+      </Script>
     </div>
   );
 }
