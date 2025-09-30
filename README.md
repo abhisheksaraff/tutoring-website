@@ -1,178 +1,118 @@
-<div align="center">
+# Predivine CS Tutoring Website
 
-<img src="[YOUR-PROJECT-LOGO-URL-HERE]" alt="Project Logo" width="120" />
+[![Website](https://img.shields.io/badge/Website-predivine.com-blue)](https://predivine.com)  
+[![Website](https://img.shields.io/badge/Website-www.predivine.com-blue)](https://www.predivine.com)  
+[![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js)](https://nextjs.org/)  
+[![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=typescript)](https://www.typescriptlang.org/)  
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-blue?logo=tailwind-css)](https://tailwindcss.com/)  
+[![DaisyUI](https://img.shields.io/badge/DaisyUI-purple)](https://daisyui.com/)  
+[![EmailJS](https://img.shields.io/badge/EmailJS-orange)](https://www.emailjs.com/)  
+[![React Toastify](https://img.shields.io/badge/React_Toastify-pink)](https://fkhadra.github.io/react-toastify/)  
+[![next-sitemap](https://img.shields.io/badge/Next_Sitemap-green)](https://www.npmjs.com/package/next-sitemap)  
 
-<h1>Your Project Title</h1>
+[![Lighthouse Performance](https://img.shields.io/badge/Performance-98-green)]()  
+[![Lighthouse Accessibility](https://img.shields.io/badge/Accessibility-89-yellow)]()  
+[![Lighthouse Best Practices](https://img.shields.io/badge/Best_Practices-100-green)]()  
+[![Lighthouse SEO](https://img.shields.io/badge/SEO-100-green)]()  
 
-<p>
-A concise and engaging one-liner describing your project. Explain what it does and who it's for in a single sentence.
-</p>
+---
 
-<p>
-<a href="https://github.com/[your-username]/[your-repo-name]/actions/workflows/ci.yml">
-<img src="https://github.com/[your-username]/[your-repo-name]/actions/workflows/ci.yml/badge.svg" alt="CI Status">
-</a>
-<a href="https://www.npmjs.com/package/[your-package-name]">
-<img src="https://img.shields.io/npm/v/[your-package-name].svg" alt="NPM Version">
-</a>
-<a href="https://github.com/[your-username]/[your-repo-name]/blob/main/LICENSE">
-<img src="https://img.shields.io/npm/l/[your-package-name].svg" alt="License">
-</a>
-<a href="https://twitter.com/[your-twitter-handle]">
-<img src="https://www.google.com/search?q=https://img.shields.io/twitter/follow/[your-twitter-handle]?style=social&logo=twitter" alt="Follow on Twitter">
-</a>
-</p>
+## Project Overview
 
-</div>
+Predivine provides expert computer science tutoring for students from middle school to university in Toronto, Canada.  
 
-Table of Contents
+The website focuses on: Personalized tutoring in Python, Java, C, Web Development, Algorithms, and AP CS prep. Clear, semantic HTML structure for SEO & accessibility. High-performance user experience optimized for speed and mobile responsiveness.  
 
-About The Project
+---
 
-Built With
+## Tech Stack
 
-Getting Started
+Next.js – React framework with SSR & App Router. TypeScript – Type-safe development. Tailwind CSS + DaisyUI – Modern styling and components. EmailJS – Contact form email sending. React Toastify – User notifications. dotenv + ts-node – Environment variable management. next-sitemap – Sitemap generation for SEO.  
 
-Prerequisites
+---
 
-Installation
+## Project Setup
 
-Usage
+### 1. Create Next.js App
+`bash
+npx create-next-app@latest predivine
+cd predivine
+`
 
-Roadmap
+### 2. Install Dependencies
+`bash
+npm install postcss autoprefixer tailwindcss @tailwindcss/postcss
+npm install daisyui@latest
+npm install @emailjs/browser
+npm install dotenv ts-node
+npm install react-toastify
+npm install next-sitemap
+`
 
-Contributing
+### 3. Tailwind CSS Configuration
+`bash
+npx tailwindcss init -p
+`
 
-License
+### 4. Environment Variables
+Create a `.env.local` file:
+`env
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+`
 
-Contact
+### 5. SEO & Performance Implementation
+Metadata setup: optimized title, description, keywords. Social sharing: Open Graph + Twitter cards, branded `og-image.png`. JSON-LD schema: `EducationalOrganization` & FAQ schema for local SEO. Semantic HTML: `<header>`, `<main>`, `<section>`, `<footer>`. Local SEO: phone/email in footer, Toronto, Canada location. Sitemap & robots.txt: generated via **next-sitemap**. Performance optimization: Next.js `<Image>` component, Lighthouse audits (Performance 98, Accessibility 89, Best Practices 100, SEO 100).  
 
-Acknowledgments
+### 6. Content SEO
+Keyword-rich content: “computer science tutoring,” “AP CS prep,” “Python tutor,” “Java tutor,” etc. FAQ section optimized with structured data.  
 
-🚀 About The Project
-Here's a blank space to talk about your project in more detail.
+### 7. Contact Form Integration
+Powered by EmailJS. Honeypot anti-bot field. Real-time notifications via React Toastify. Autocomplete attributes for all fields.  
 
-What was your motivation for creating it?
+### 8. Analytics
+Google Analytics 4 (GA4) with `gtag.js`. Real-time event tracking. GDPR/compliance ready if cookie consent is added.  
 
-What problem does it solve?
+---
 
-What makes your project stand out from others?
+## Key Highlights
 
-This is your elevator pitch. Make it count!
+Fully responsive & mobile-friendly. SEO optimized with structured metadata & JSON-LD. Accessibility-conscious (Lighthouse: 89/100). High performance (Lighthouse: 98/100). Modern TypeScript + Next.js App Router.  
 
-🛠️ Built With
+---
 
-List the major frameworks, libraries, and tools you used to build your project.
+## Future Improvements
 
-[][Next-url]
+Implement cookie consent banner for GDPR compliance. Add FAQ structured data for rich snippets. Improve accessibility score to 100.  
 
-[][React-url]
+---
 
-[][TailwindCSS-url]
+## Project Structure (Selected)
 
-[][TypeScript-url]
+`
+/app
+  /globals.css
+  /RootLayout.tsx
+/components
+  /ContactForm.tsx
+/public
+  /og-image.png
+  /predivine-logo-solid.png
+.env.local
+next.config.js
+tailwind.config.js
+postcss.config.js
+`
 
-⚙️ Getting Started
-Follow these steps to get a local copy up and running.
+---
 
-Prerequisites
+## Conclusion
 
-This is an example of how to list things you need to use the software and how to install them.
+This project demonstrates a professional, SEO-friendly, performance-optimized, and fully functional Next.js website for Predivine CS Tutoring. It combines modern web development best practices with analytics, contact forms, accessibility, and local SEO for strong online visibility.  
 
-Node.js (v18 or newer recommended)
+---
 
-npm
+## References & Tools
 
-Bash
-npm install npm@latest -g
-Installation
-
-Clone the repo
-
-Bash
-git clone https://github.com/[your-username]/[your-repo-name].git
-Navigate to the project directory
-
-Bash
-cd [your-repo-name]
-Install NPM packages
-
-Bash
-npm install
-Set up your environment variables
-Create a .env.local file in the root and add the necessary variables.
-
-Code snippet
-API_KEY="YOUR_API_KEY"
-DATABASE_URL="YOUR_DATABASE_URL"
-Start the development server
-
-Bash
-npm run dev
-💡 Usage
-Use this space to show useful examples of how your project can be used. You can include code snippets, screenshots, or even GIFs.
-
-JavaScript
-// Example code snippet
-import awesomeFunction from 'my-awesome-project';
-
-const result = awesomeFunction('Hello World!');
-console.log(result);
-For more examples, please refer to the Documentation
-
-🗺️ Roadmap
-See the open issues for a full list of proposed features (and known issues).
-
-[x] Feature 1: Initial setup and basic functionality
-
-[ ] Feature 2: Add advanced data visualization
-
-[ ] Feature 3: Multi-language support
-
-[ ] Spanish
-
-[ ] French
-
-👋 Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-
-Fork the Project
-
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-
-Push to the Branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-Don't forget to give the project a star! Thanks again!
-
-📜 License
-Distributed under the MIT License. See LICENSE for more information.
-
-📧 Contact
-Your Name - @your_twitter_handle - your.email@example.com
-
-Project Link: [https://github.com/[your-username]/[your-repo-name]](https://www.google.com/search?q=https://github.com/%5Byour-username%5D/%5Byour-repo-name%5D)
-
-🙏 Acknowledgments
-Use this space to thank anyone who has helped you.
-
-Awesome README Template
-
-Shields.io
-
-Font Awesome
-
-[]: #
-[]: #
-[next-url]: https://www.google.com/search?q=%5Bhttps://nextjs.org/%5Dhttps://nextjs.org/
-[]: #
-[react-url]: https://www.google.com/search?q=%5Bhttps://reactjs.org/%5Dhttps://reactjs.org/
-[]: #
-[tailwindcss-url]: https://www.google.com/search?q=%5Bhttps://tailwindcss.com/%5Dhttps://tailwindcss.com/
-[]: #
-[typescript-url]: https://www.google.com/search?q=%5Bhttps://www.typescriptlang.org/%5Dhttps://www.typescriptlang.org/
+Next.js Documentation. Tailwind CSS Documentation. DaisyUI. EmailJS. React Toastify. next-sitemap. Google Analytics 4.  
