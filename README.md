@@ -98,7 +98,7 @@ Modern TypeScript + Next.js App Router.
 
 ## Future Improvements
 
-Implement cookie consent banner for GDPR compliance. Add FAQ structured data for rich snippets. Improve accessibility score to 100.
+Add FAQ structured data for rich snippets. Improve accessibility score to 100.
 
 ---
 
