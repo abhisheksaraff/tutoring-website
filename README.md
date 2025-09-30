@@ -10,6 +10,8 @@ Predivine provides expert computer science tutoring for students from middle sch
 
 The website focuses on: Personalized tutoring in Python, Java, C, Web Development, Algorithms, and AP CS prep. Clear, semantic HTML structure for SEO & accessibility. High-performance user experience optimized for speed and mobile responsiveness.
 
+<video src="/demo.mp4" controls width="600"></video>
+
 ---
 
 ## Tech Stack
