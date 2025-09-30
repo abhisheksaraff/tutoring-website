@@ -16,13 +16,13 @@ The website focuses on: Personalized tutoring in Python, Java, C, Web Developmen
 
 ## Tech Stack
 
-Next.js – React framework with SSR & App Router.
-TypeScript – Type-safe development.
-Tailwind CSS + DaisyUI – Modern styling and components.
-EmailJS – Contact form email sending.
-React Toastify – User notifications.
-dotenv + ts-node – Environment variable management.
-next-sitemap – Sitemap generation for SEO.
+- Next.js – React framework with SSR & App Router.
+- TypeScript – Type-safe development.
+- - Tailwind CSS + DaisyUI – Modern styling and components.
+- EmailJS – Contact form email sending.
+- React Toastify – User notifications.
+- dotenv + ts-node – Environment variable management.
+- next-sitemap – Sitemap generation for SEO.
 
 ---
 
