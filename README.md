@@ -16,12 +16,12 @@ The website focuses on: Personalized tutoring in Python, Java, C, Web Developmen
 
 ## Tech Stack
 
-Next.js – React framework with SSR & App Router. 
-TypeScript – Type-safe development. 
-Tailwind CSS + DaisyUI – Modern styling and components. 
-EmailJS – Contact form email sending. 
-React Toastify – User notifications. 
-dotenv + ts-node – Environment variable management. 
+Next.js – React framework with SSR & App Router.
+TypeScript – Type-safe development.
+Tailwind CSS + DaisyUI – Modern styling and components.
+EmailJS – Contact form email sending.
+React Toastify – User notifications.
+dotenv + ts-node – Environment variable management.
 next-sitemap – Sitemap generation for SEO.
 
 ---
@@ -55,6 +55,7 @@ npx tailwindcss init -p
 ### 4. Environment Variables
 
 Create a `.env.local` file:
+
 ```env
 NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
 NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
@@ -63,13 +64,13 @@ NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
 
 ### 5. SEO & Performance Implementation
 
-Metadata setup: optimized title, description, keywords. 
-Social sharing: Open Graph + Twitter cards, branded `og-image.png`. 
-JSON-LD schema: `EducationalOrganization` & FAQ schema for local SEO. 
-Semantic HTML: `<header>`, `<main>`, `<section>`, `<footer>`. 
-Local SEO: phone/email in footer, Toronto, Canada location. 
-Sitemap & robots.txt: generated via **next-sitemap**. 
-Performance optimization: Next.js `<Image>` component, Lighthouse audits (Performance 98, Accessibility 89, Best Practices 100, SEO 100).
+- Metadata setup: optimized title, description, keywords
+- Social sharing: Open Graph + Twitter cards, branded `og-image.png`
+- JSON-LD schema: `EducationalOrganization` & FAQ schema for local SEO
+- Semantic HTML: `<header>`, `<main>`, `<section>`, `<footer>`
+- Local SEO: phone/email in footer, Toronto, Canada location
+- Sitemap & robots.txt: generated via **next-sitemap**
+- Performance optimization: Next.js `<Image>` component, Lighthouse audits (Performance 98, Accessibility 89, Best Practices 100, SEO 100)
 
 ### 6. Content SEO
 
@@ -99,7 +100,8 @@ Implement cookie consent banner for GDPR compliance. Add FAQ structured data for
 
 ## Project Structure (Selected)
 
-```/app
+```
+/app
   /globals.css
   /RootLayout.tsx
 /components
@@ -110,7 +112,8 @@ Implement cookie consent banner for GDPR compliance. Add FAQ structured data for
 .env.local
 next.config.js
 tailwind.config.js
-postcss.config.js```
+postcss.config.js
+```
 
 ---
 
