@@ -173,7 +173,18 @@ export default function ContactForm() {
           className="w-full p-2 border-2 border-gray-200 bg-white h-[2.5rem]"
           defaultValue=""
           autoComplete="education-level"
-        />
+        >
+          <option value="" disabled hidden>
+            Current School Year
+          </option>
+          <option value="Elementary K-5">Elementary K-5</option>
+          <option value="Middle School 6-8">Middle School 6-8</option>
+          <option value="High School 9-12">High School 9-12</option>
+          <option value="College University Student">
+            College / University Student
+          </option>
+          <option value="Adult">Adult</option>
+        </select>
 
         {/* Learning Needs */}
         <textarea
