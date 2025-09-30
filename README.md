@@ -88,7 +88,15 @@ Google Analytics 4 (GA4) with `gtag.js`. Real-time event tracking. GDPR/complian
 
 ## Key Highlights
 
-Fully responsive & mobile-friendly. SEO optimized with structured metadata & JSON-LD. Accessibility-conscious (Lighthouse: 89/100). High performance (Lighthouse: 98/100). Modern TypeScript + Next.js App Router.
+Fully responsive & mobile-friendly. 
+
+SEO optimized with structured metadata & JSON-LD. 
+
+Accessibility-conscious (Lighthouse: 89/100). 
+
+High performance (Lighthouse: 98/100). 
+
+Modern TypeScript + Next.js App Router.
 
 ---
 
