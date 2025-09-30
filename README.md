@@ -18,7 +18,7 @@ The website focuses on: Personalized tutoring in Python, Java, C, Web Developmen
 
 - Next.js – React framework with SSR & App Router.
 - TypeScript – Type-safe development.
-- - Tailwind CSS + DaisyUI – Modern styling and components.
+- Tailwind CSS + DaisyUI – Modern styling and components.
 - EmailJS – Contact form email sending.
 - React Toastify – User notifications.
 - dotenv + ts-node – Environment variable management.
