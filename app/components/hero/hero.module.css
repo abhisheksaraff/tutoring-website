@@ -1,6 +1,7 @@
 .hero {
-  margin-top: 0.25rem; /* mt-1 equivalent */
-  height: 70vh; /* default for mobile */
+  margin-top: 0.25rem;
+  height: 70vh;
+  background-position: center 42%;
 
   /* Medium screens (tablet) */
   @media (min-width: 800px) {
@@ -19,10 +20,13 @@
   /* Mobile landscape */
   @media (max-width: 799px) and (orientation: landscape) {
     height: 90vh; /* taller for phone landscape */
+    p {
+      font-size: 2.3rem;
+    }
   }
 
   /* Extra-wide screens */
   @media (min-width: 1600px) {
-    height: 80vh; 
+    height: 80vh;
   }
 }
