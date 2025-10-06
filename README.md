@@ -1,6 +1,9 @@
 # Predivine CS Tutoring Website
 
-[![Website](https://img.shields.io/badge/Website-predivine.com-blue)](https://predivine.com) [![Website](https://img.shields.io/badge/Website-www.predivine.com-blue)](https://www.predivine.com) [![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js)](https://nextjs.org/) [![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=typescript)](https://www.typescriptlang.org/) [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-blue?logo=tailwind-css)](https://tailwindcss.com/) [![DaisyUI](https://img.shields.io/badge/DaisyUI-purple)](https://daisyui.com/) [![EmailJS](https://img.shields.io/badge/EmailJS-orange)](https://www.emailjs.com/) [![React Toastify](https://img.shields.io/badge/React_Toastify-pink)](https://fkhadra.github.io/react-toastify/) [![next-sitemap](https://img.shields.io/badge/Next_Sitemap-green)](https://www.npmjs.com/package/next-sitemap)
+[![Website](https://img.shields.io/badge/Website-predivine.com-blue)](https://predivine.com) [![Website](https://img.shields.io/badge/Website-www.predivine.com-blue)](https://www.predivine.com)
+
+[![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js)](https://nextjs.org/) [![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=typescript)](https://www.typescriptlang.org/) [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-blue?logo=tailwind-css)](https://tailwindcss.com/) [![DaisyUI](https://img.shields.io/badge/DaisyUI-purple)](https://daisyui.com/) [![EmailJS](https://img.shields.io/badge/EmailJS-orange)](https://www.emailjs.com/) [![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript)](https://www.javascript.com/) [![HTML5](https://img.shields.io/badge/HTML5-orange?logo=html5)](https://developer.mozilla.org/en-US/docs/Web/HTML) [![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css3)](https://developer.mozilla.org/en-US/docs/Web/CSS) [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/)
+[![React Toastify](https://img.shields.io/badge/React_Toastify-pink)](https://fkhadra.github.io/react-toastify/) [![next-sitemap](https://img.shields.io/badge/Next_Sitemap-green)](https://www.npmjs.com/package/next-sitemap)
 
 ## [![Lighthouse Performance](https://img.shields.io/badge/Performance-98-green)]() [![Lighthouse Accessibility](https://img.shields.io/badge/Accessibility-89-yellow)]() [![Lighthouse Best Practices](https://img.shields.io/badge/Best_Practices-100-green)]() [![Lighthouse SEO](https://img.shields.io/badge/SEO-100-green)]()
 
@@ -88,10 +91,10 @@ Google Analytics 4 (GA4) with `gtag.js`. Real-time event tracking. GDPR/complian
 
 ## Key Highlights
 
-Fully responsive & mobile-friendly. 
-SEO optimized with structured metadata & JSON-LD. 
-Accessibility-conscious (Lighthouse: 89/100). 
-High performance (Lighthouse: 98/100). 
+Fully responsive & mobile-friendly.
+SEO optimized with structured metadata & JSON-LD.
+Accessibility-conscious (Lighthouse: 89/100).
+High performance (Lighthouse: 98/100).
 Modern TypeScript + Next.js App Router.
 
 ---
